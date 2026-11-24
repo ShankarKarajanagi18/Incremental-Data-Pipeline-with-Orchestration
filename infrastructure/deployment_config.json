@@ -1,0 +1,17 @@
+{
+  "ProjectName": "incremental-travel-data-pipeline",
+  "Environment": "dev",
+  "AwsRegion": "us-east-1",
+  "S3BucketPrefix": "travel-booking-pipeline-data",
+  "GlueDatabaseName": "travel_bookings_db",
+  "GlueJobName": "incremental_travel_bookings_etl",
+  "GlueCrawlerName": "travel_bookings_raw_crawler",
+  "GlueWorkflowName": "travel_bookings_pipeline_workflow",
+  "EventBridgeRuleName": "travel_bookings_s3_upload_rule",
+  "CostControl": {
+    "GlueWorkerType": "G.1X",
+    "GlueNumberOfWorkers": 2,
+    "GlueJobTimeoutMinutes": 15,
+    "S3LifecycleDaysToExpire": 90
+  }
+}

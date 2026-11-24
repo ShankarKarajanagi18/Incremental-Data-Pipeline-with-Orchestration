@@ -1,0 +1,16 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "EventBridgeGlueWorkflowExecution",
+      "Effect": "Allow",
+      "Action": [
+        "glue:notifyEvent",
+        "glue:StartWorkflowRun"
+      ],
+      "Resource": [
+        "arn:aws:glue:*:*:workflow/travel_bookings_pipeline_workflow"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PySpark and Hadoop local outputs
+metastore_db/
+derby.log
+.spark-staging/
+warehouse/
+spark-warehouse/
+
+# Local data and logs
+*.log
+data/sample_bookings/*.tmp
+data/invalid_records/*.tmp
+.pytest_cache/
+.coverage
+htmlcov/
+
+# AWS and environment credentials
+.env
+.env.*
+!.env.example
+aws_credentials
+*.pem
+
+# IDE / OS specific files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
